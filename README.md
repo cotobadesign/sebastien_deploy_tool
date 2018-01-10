@@ -5,15 +5,14 @@
 下記を設定してください
 accountName='Your name'
 password='Your password'
-uploadFile=Sample.aiml
 botId=Your bot id
 projectId=
 ```
 
-## アップロードしたいファイル名とボット名を引数で渡すことも出来ます。アップロードしたいaimlファイルは同階層に置いて下さい。
+## アップロードしたいファイル名を引数で渡すと単体アップロード。引数を渡さないと同階層のAIMLを全てアップロードします。
 ```shell
-uploadFile=$1.aiml
-botId=$2
+uploadFileName.aiml
+./put.sh uploadFileName
 ```
 
 ## projectIDがわからない場合は下記を実行してください。
